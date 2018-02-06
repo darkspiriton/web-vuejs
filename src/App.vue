@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <img
-      v-for="i in 5"
-      :key="i"
-      src="./assets/logo.png">
+    <img src="./assets/logo.png">
     <HelloWorld/>
   </div>
 </template>
@@ -15,12 +12,6 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  },
-  async methods () {
-    let value = 1
-    if (value === 1) {
-      return value
-    }
   }
 }
 </script>
